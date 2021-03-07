@@ -10,6 +10,7 @@ func main() {
 
 	// Warning
 	user.PrintBanner()
+	user.RandomMessage()
 
 	// function flag
 	var module string
@@ -43,8 +44,10 @@ func main() {
 		mod.Dissect(file, url, cookie, header)
 		break
 
+	case "word":
+		mod.ExtractWords(file, url, cookie, header)
+
 	default:
 		println("Chose a module")
 	}
-
 }
