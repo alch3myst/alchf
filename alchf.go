@@ -48,6 +48,10 @@ func main() {
 		mod.ExtractWords(file, url, cookie, header)
 
 	default:
-		println("Chose a module")
+		println("Modules: recon, dis, word")
+		println("Dis: extract all urls, api like and links from file")
+		println("Word: Split all worlds in a file and output them.")
+		println("Recon: TODO")
+		println("usage: alchf -m MODULE -f FILE")
 	}
 }
